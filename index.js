@@ -25,6 +25,8 @@ conectarDB();
 //   },
 // };
 
+app.use(express.static("public"));
+
 app.use(cors());
 
 app.use("/api/veterinarios", veterinarioRoutes);

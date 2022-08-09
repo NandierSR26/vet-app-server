@@ -4,9 +4,14 @@ const emailOlvidePassword = async (datos) => {
   const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
     port: process.env.EMAIL_PORT,
+    secure: true,
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      type: process.env.EMAIL_type,
+      user: process.env.EMAIL_user,
+      clientId: process.env.EMAIL_clientId,
+      clientSecret: process.env.EMAIL_clientSecret,
+      refreshToken: process.env.EMAIL_refreshToken,
+      accessToken: process.env.EMAIL_accessToken,
     },
   });
 

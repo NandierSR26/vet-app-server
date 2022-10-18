@@ -5,9 +5,6 @@ import {
   perfil,
   confirmar,
   autenticar,
-  olvidePassword,
-  comprobarToken,
-  nuevoPassword,
   actualizarPerfil,
   actualizarPassword,
 } from "../controllers/veterinarioController.js";

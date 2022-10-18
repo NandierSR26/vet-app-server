@@ -31,10 +31,7 @@ const veterinarioSchema = mongoose.Schema({
     type: String,
     default: generarId(),
   },
-  confirmado: {
-    type: Boolean,
-    default: false,
-  },
+
 });
 
 veterinarioSchema.pre("save", async function (next) {
